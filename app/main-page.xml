@@ -1,13 +1,14 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
     <ActionBar title="My App" icon="" />
     <StackLayout class="p-4">
-        <Label text="Please tap me" class="text-3xl text-center" />
-        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
-        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+
+        <Label text="Welcome to my FirtApp!" class="text-3xl text-center" />
+
+        <Button text="Hello World!" tap="{{ onTap }}" class="-primary" />
 
         <SearchBar
             id="searchBar"
-            hint="Enter search term here ..."
+            hint="Type Here"
             clear="onClear"
             submit="onSubmit"
         />
@@ -19,7 +20,10 @@
             loaded="onDatePickerLoaded"
             />
 
-        <image src="res://icon" stretch="aspectFill" />
+        <image
+        src="https://art.nativescript.org/logo/export/NativeScript_Logo_Blue_White.png"
+        stretch="aspectFill"
+        />
         
     </StackLayout>
 </Page>
